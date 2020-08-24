@@ -1,4 +1,4 @@
-package http_examples
+package examples
 
 import (
 	"fmt"

@@ -1,7 +1,14 @@
 package main
 
-import test "./http"
+import (
+	"net/url"
+
+	"./webcrawler"
+)
 
 func main() {
-	test.TestGetRequest()
+	// examples.TestGetRequest()
+
+	target, _ := url.ParseRequestURI("https://example.com")
+	webcrawler.GetHTMLPage(*target)
 }
