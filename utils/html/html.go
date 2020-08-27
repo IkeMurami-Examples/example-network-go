@@ -23,4 +23,5 @@ func (page Page) Beatify() Page {
 // GetJSScripts -
 func (page Page) GetJSScripts() []js.Script {
 	// use colly for crawling site: https://github.com/gocolly/colly
+	return nil
 }

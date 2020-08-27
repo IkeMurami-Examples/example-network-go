@@ -15,6 +15,6 @@ type Script struct {
 
 // Beatify -
 func (code Script) Beatify() Script {
-	code.SourceCode = jsbeautifier.Beautify(&code.SourceCode, optargs.MapType{})
+	code.SourceCode, _ = jsbeautifier.Beautify(&code.SourceCode, optargs.MapType{})
 	return code
 }
